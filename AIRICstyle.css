@@ -360,7 +360,7 @@ img.topbanner {
 	display: none !important;
   }
   
-/*Moved all media queries to end of stylesheet*/
+/*Moved all media queries to end of stylesheet TH 10/20/20*/
   @media screen and (max-width: 1024px){
     img.bg {
       left: 50%;
