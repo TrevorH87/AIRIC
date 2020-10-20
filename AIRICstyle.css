@@ -386,3 +386,7 @@ img.topbanner {
 	.sidenav {padding-top: 16px;}
 	.sidenav a {font-size: 12px;}
   }
+/*Hide the background image on small devices TH 10/2020 */
+@media screen and (max-width: 600px) {
+	.bg { display: none; }  /* hide bg img on small screens */
+  }
