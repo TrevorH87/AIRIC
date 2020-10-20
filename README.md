@@ -1,2 +1,8 @@
-# AIRIC
-Indigenous people of what is now called North and South America, otherwise known as Native Americans, American Indians, First Nations, NDNs, and a wide variety of other terms, are still alive and have a long association with comic books, comic strips, graphic novels, and other related media. We have been represented and/or misrepresented in them for decades. We like to read them, collect them, and discuss them. Increasingly, we also write them, draw them, and publish them. Coming soon, this website aspires to be a resource for all of the above. After a delay due to family circumstances, please check back for AIRIC's debut in November 2020.
+AIRIC User Stories
+
+Story #1: The content of each page should diplay in the center 60% of the 
+page and have a static background visible from each side
+
+Story #2
+background image should only be visible on larger devices and not on smartphones 
+and content should scale to fill viewport 
