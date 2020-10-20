@@ -1,0 +1,399 @@
+/* basic style elements for all pages */ 
+body {
+	background-color: #E0C8A0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+#sidebar {
+	width: 200px;
+	border: none;
+	background-color: #E0C8A0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+#head1 {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+#head2 {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+#head3 {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+#smtext {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+
+/* elements for index tables */ 
+
+table#indextable {
+    border-collapse: collapse;
+    width: 85%;
+}
+
+th {
+    background-color: #8C0000;
+    color: #ffffff;
+}
+
+th#tenpercent-head {
+    width: 10%;
+    text-align: left;
+    padding: 4px;
+}
+
+th#fifteenpct-head {
+    width: 15%;
+    text-align: left;
+    padding: 4px;
+}
+
+th#issue-head {
+    width: 2%;
+    text-align: center;
+    padding: 4px;
+}
+
+th#date-head {
+    width: 4%;
+    text-align: center;
+    padding: 4px;
+}
+
+th#fivepercent-head {
+    width: 5%;
+    text-align: center;
+    padding: 4px;
+}
+
+td#issue-cell {
+    width: 2%;
+    text-align: center;
+    padding: 4px;
+}
+
+td#date-cell {
+    width: 4%;
+    text-align: center;
+    padding: 4px;
+}
+
+th#fivepercent {
+    width: 5%;
+    text-align: center;
+    padding: 4px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+/* top banner */
+.topnav {
+  display: inline-block;
+  overflow: hidden;
+  background-color: #E0C8A0;
+  height: 200px;
+  background-image: url(images/seq-art-banner.jpg), url(images/seq-art-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1; /*Places the navbar above the other content to avoid hiding*/
+}
+
+
+
+
+/* side navigation bar style elements */ 
+.sidenav {
+	display: none;
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    background-color: #E0C8A0;
+    overflow-x: hidden;
+    padding-top: 48px;
+}
+
+.sidenav a {
+    padding: 12px 12px 12px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #C80000;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    font-size: 28px;
+    margin-left: 48px;
+}
+
+
+
+/* style elements for character profile pages */ 
+#charsquare {
+	width: 770px;
+	border: 0px;
+	border-spacing: 0px;
+	background:url(images/crossknot1.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#chartoptr {
+	vertical-align: bottom;
+	height: 280px;
+	padding: 7px;
+}
+
+#charmidtr {
+	vertical-align: middle;
+	height: 36px;
+	padding: 0px;
+}
+
+#charbottr {
+	vertical-align: top;
+	height: 280px;
+	padding: 7px;
+}
+
+#charltd {
+	text-align: right;
+	width: 350px;
+	padding: 7px;
+}
+
+#charctd {
+	text-align: center;
+	width: 36px;
+	padding: 0px;
+}
+
+#charrtd {
+	text-align: left;
+	width: 350px;
+	padding: 7px;
+}
+
+#charlists {
+	width: 840px;
+	border: 1px solid black;
+	border-spacing: 1px;
+}
+
+#charlist {
+	border: 1px solid black;
+	width: 360px;
+	padding: 7px;
+}
+
+/* style elements for collapsible sections - may need to specify for character vs creator, etc. */
+.collapsible {
+  background-color: #c80000;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  width: 100%;
+  border: 10px;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ff0000;
+}
+
+.collapsible:after {
+  content: '\2722';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 0px;
+}
+
+.active:after {
+  content: "\2747";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+}
+
+img.topbanner {
+	/* Set rules to fill background */
+	min-height: 10%;
+	min-width: 1024px;
+		
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 90%;
+	min-width: 1024px;
+		
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning */
+	position: fixed;
+	top: 180px;
+	left: 0;
+}
+		
+		
+#page-wrap { 
+    position: relative; 
+    width: 60%; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background: #DFD3c2; 
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    box-shadow: 0 0 20px black; 
+}
+
+p { 
+    font: 20px/2 Arial, Helvetica, sans-serif; 
+    margin: 0 0 30px 0; 
+    text-indent: 40px; 
+}
+
+
+/*What is this code doing? TH 10/20/2020*/
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #222;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		padding: 20px 0 20px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	#demo-bar-buttons {
+		padding-top: 10px;
+		float: right;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		margin-left: 20px;
+		color: white;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		text-decoration: underline;
+	}
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+
+
+
+
+/*Media queries traditionally go at the end of the stylesheet -TH 10/20/2020*/
+@media screen and (max-width: 1024px){
+	img.bg {
+		left: 50%;
+		margin-left: -512px; }
+    }
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 16px;}
+  .sidenav a {font-size: 12px;}
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
