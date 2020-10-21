@@ -9,76 +9,65 @@
   <!--Initialize viewport to help responsive elements function TH 10/20/20-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!--Insert this script into the header to import library for the dropdown buttons-->
+  <script src="https://kit.fontawesome.com/ae9b0bcc18.js" crossorigin="anonymous"></script>
+  
+  <!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon-->
+<script> 
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </head>
   
   <body>
       
-  <div class="topnav">
-  
-    <div class="topnav-banner">
-  
-      <a href="index.htm"><img class="logo-translate" src="images/AIRIC-logo-color3.jpg" alt="AIRIC"></a>
-  
-      <img width="88%" align="right" src="images/seq-art-banner.jpg" alt="sequential art banner image">
-  
-    </div>
-  </div><!--Does this belong? TH 10/20/20-->
-    
-    <div id="mySidenav" class="sidenav">
-  
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr; <span style="font-size:20px;">hide</span></a>
-  
-      <a href="index.htm">Home</a><p>
-  
-      <a href="about.htm">About</a><p>
-  
-      <a href="index-characters.htm">Characters</a><p>
-  
-      <a href="comics.htm">Comics</a><br>
-  
-      <a href="index-volumes.htm">&nbsp; - Volumes</a><br>
-  
-      <a href="index-issues.htm">&nbsp; - Issues</a><br>
-  
-      <a href="index-stories.htm">&nbsp; - Stories</a><p>
-  
-      <a href="creators.htm">Creators</a><br>
-  
-      <a href="index-creators.htm">&nbsp; - Individuals</a><br>
-  
-      <a href="index-publishers.htm">&nbsp; - Publishers</a><p>
-  
-      <a href="index-cultures.htm">Cultures</a><p>
-  
-      <a href="index-commentary.htm">Commentary</a><p>
-  
-      <a href="index-community.htm">Community</a><p>
-  
-      <a href="contact.htm">Contact</a>
-  
-    </div>
-  
-  
-      <span style="color:#ffff00;" onclick="openNav()">&#9776; menu</span>
-  
-      <script>
-  
-      function openNav() {
-  
-          document.getElementById("mySidenav").style.display = "block";
-  
-      }
-  
-      function closeNav() {
-  
-          document.getElementById("mySidenav").style.display = "none";
-  
-      }
-  
-      </script>
-  
-    
-  </div>
+    <div class="navbar">
+      <div class="bg-img">
+        <div class="container">
+      <div class="topnav" id="myTopnav">
+        
+        <a href="#home" class="active"><div class="nav-img"></div></a>
+        <a href="#about">About</a>
+        <a href="#characters">Characters</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Comics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#volumes">Volumes</a>
+            <a href="#issues">Issues</a>
+            <a href="#stories">Stories</a>
+          </div>
+        </div>
+        
+         <div class="dropdown">
+          <button class="dropbtn">Creators
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#individuals">Individuals</a>
+            <a href="#publishers">Publishers</a>
+          </div>
+        </div>
+        
+        <a href="#cultures">Cultures</a>
+        <a href="#cultures">Commentary</a>
+        <a href="#cultures">Community</a>
+        <a href="#cultures">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+          </div>
+          </div>
+      </div>
+      </div>
      
   <img src="images/AIRIC-bg.jpg" class="bg">
   <div id="page-wrap">
