@@ -2,7 +2,7 @@
 body {
 	background-color: #E0C8A0;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 2vw; /*Changed to a responive size TH 10/20/20 */
 }
 
 #sidebar {
@@ -32,7 +32,7 @@ body {
 #head3 {
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 2vw;
 	font-weight: bold;
 	line-height: 1.1;
 }
@@ -294,7 +294,7 @@ img.topbanner {
   }
   
   p { 
-      font: 20px/2 Arial, Helvetica, sans-serif; 
+      font: 2vw/2 Arial, Helvetica, sans-serif; /*changed font size to a responsive size TH 10/20/20 */
       margin: 0 0 30px 0; 
       text-indent: 40px; 
   }
@@ -359,7 +359,20 @@ img.topbanner {
   #demo-bar-badge:before, #demo-bar-badge:after {
 	display: none !important;
   }
-  
+
+ /*Scales logo image to fit TH 10/20/20*/ 
+.logo-translate{
+  max-width: 100%;
+  height: auto;
+}
+/*Scales text to fit TH 10/20/20 (Work in progress - other elements are interfering)*/
+.text-body{
+  font-size: 1.5vw;
+}
+#text-body{
+
+}
+
 /*Moved all media queries to end of stylesheet TH 10/20/20*/
   @media screen and (max-width: 1024px){
     img.bg {
@@ -386,7 +399,8 @@ img.topbanner {
 	.sidenav {padding-top: 16px;}
 	.sidenav a {font-size: 12px;}
   }
-/*Hide the background image on small devices TH 10/2020 */
+/*Perform actions on small devices TH 10/2020 */
 @media screen and (max-width: 600px) {
 	.bg { display: none; }  /* hide bg img on small screens */
-  }
+  
+}
